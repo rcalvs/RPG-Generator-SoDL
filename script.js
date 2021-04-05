@@ -1,5 +1,5 @@
-const xd6 = Math.ceil(Math.random() * 6) * 3;
-console.log(xd6);
+// const xd6 = Math.ceil(Math.random() * 6) * 3;
+// console.log(xd6);
 
 const humanPersonality = {
     3 : 'O personagem é cruel, maldoso e egoísta. Ele gosta de fazer outros sofrerem.',
@@ -120,6 +120,25 @@ const humanAntecessor = {
 };
 
 
+function randomize() {
+    const randomGen1d6 = Math.ceil(Math.random() * 6);
+    const randomGen2d6 = Math.ceil(Math.random() * 6);
+    const randomGen3d6 = Math.ceil(Math.random() * 6);
+    const sum3d6 = randomGen1d6 + randomGen2d6 + randomGen3d6
+    return sum3d6
+  }
+  
+  function humam() {
+  
+  const rightContent = document.querySelector('text');
+  rightContent.innerText = randomize()
+      console.log(randomize(), humanPersonality[randomize()], randomize(), humanReligion[randomize()], randomize(), humanAge[randomize()], randomize(), humanStature[randomize()], randomize(), humanAparency[randomize()],randomize(), humanAntecessor[randomize()])
+  }
+  //function deuCerto() {
+  //  console.log("deu Certo");
+  //}
+  
+  //btn.addEventListener('click', deuCerto());
 
 // console.log(humanPersonality[xd3])
 
