@@ -1,14 +1,3 @@
-// const humanPersonality = import('./data.js').humanPersonality;
-// const humanReligion = import('./data.js');
-// const humanAge = import('./data.js');
-// const humanStature = import('./data.js');
-// const humanAparency = import('./data.js');
-// const humanAntecessor = import('./data.js');
-
-// const humanData = import('./data.js');
-
-// console.log(humanData);
-
 const humanPersonality = {
     3 : 'O personagem é cruel, maldoso e egoísta. Ele gosta de fazer outros sofrerem.',
     4 : '4 - O personagem é errático e imprevisível. Ele tem dificuldades para manter sua palavra e tende a ter comportamentos inconstantes.',
@@ -127,40 +116,19 @@ const humanAntecessor = {
     20 : 'O personagem conseguiu algum dinheiro e começa o jogo com 2d6 cc.',
 };
 
+const human = {
+    humanPersonality,
+    humanReligion,
+    humanAge,
+    humanStature,
+    humanAparency,
+    humanAntecessor,
+}
 
-function randomize() {
-    const randomGen1d6 = Math.ceil(Math.random() * 6);
-    const randomGen2d6 = Math.ceil(Math.random() * 6);
-    const randomGen3d6 = Math.ceil(Math.random() * 6);
-    const sum3d6 = randomGen1d6 + randomGen2d6 + randomGen3d6
-    return sum3d6
-};
-// humanPersonality[randomize()], humanReligion[randomize()], 
-// humanAge[randomize()], humanStature[randomize()],
-// humanAparency[randomize()],humanAntecessor[randomize()]
 
-window.onload = function initialSet() {
-    let humanSet = human();
-};
-
-function human() {
-    humanSet =
-    `${humanPersonality[randomize()]}
-     ${humanReligion[randomize()]}
-     ${humanAge[randomize()]}
-     ${humanStature[randomize()]}
-     ${humanAparency[randomize()]}
-     ${humanAntecessor[randomize()]}`;
-    return humanSet;
-};
-
-const btn = document.getElementById('btn');
-btn.addEventListener("click",deuCerto);
-const text = document.getElementById('text')
-
-function deuCerto() {
-    console.log("deu Certo");
-    text.innerText = `${human()}`;
-
-};
-
+// exports.humanPersonality;
+// exports.humanReligion;
+// exports.humanAge;
+// exports.humanStature;
+// exports.humanAparency;
+// exports.humanAntecessor;

@@ -1,4 +1,21 @@
 main {
-    display: flex;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-direction: row;
+
+}
+
+.right-container {
+  padding: 30px;
+  background-color: aqua;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+
+.left-container {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: aqua;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
